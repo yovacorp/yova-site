@@ -1,2 +1,2 @@
 # yova-site
-The official yova website
+The official yova
