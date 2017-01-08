@@ -138,7 +138,7 @@ strong { font-weight: 600; }
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  background-color: #f56363;
+  background-color: #7779B7;
   line-height: 1.5;
   border: none;
   border-radius: 3px;
@@ -149,7 +149,8 @@ strong { font-weight: 600; }
 
 .btn:hover {
   color: #fff;
-  background-color: #fa5454;
+  background-color: #7779B7;
+  opacity: 0.9;
 }
 
 .btn:active,
@@ -192,7 +193,7 @@ strong { font-weight: 600; }
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar { background-color: #fff; }
 
-.navbar-brand { padding: 0 0 0 1em; }
+.navbar-brand { display: inline-block; float: none; }
 
 .navbar-brand .logo-nav,
 .nav-left { display: none; }
@@ -840,7 +841,7 @@ blockquote cite {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #f56363 url(../img/chat-icon.svg) center center no-repeat;
+  background: #7779B7 url(../img/chat-icon.svg) center center no-repeat;
   position: fixed;
   bottom: 120px;
   right: 30px;
