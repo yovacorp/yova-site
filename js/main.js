@@ -30,22 +30,22 @@ $(function() {
    ========================================================================== */
 
 
-    $('.tweet').twittie({
-        username: 'envatomarket', // change username here
-        dateFormat: '%b. %d, %Y',
-        template: '{{tweet}} {{user_name}}',
-        count: 10
-    }, function() {
-        var item = $('.tweet ul');
+    // $('.tweet').twittie({
+    //     username: 'envatomarket', // change username here
+    //     dateFormat: '%b. %d, %Y',
+    //     template: '{{tweet}} {{user_name}}',
+    //     count: 10
+    // }, function() {
+    //     var item = $('.tweet ul');
 
-        item.children('li').first().show().siblings().hide();
-        setInterval(function() {
-            item.find('li:visible').fadeOut(500, function() {
-                $(this).appendTo(item);
-                item.children('li').first().fadeIn(500);
-            });
-        }, 5000);
-    });
+    //     item.children('li').first().show().siblings().hide();
+    //     setInterval(function() {
+    //         item.find('li:visible').fadeOut(500, function() {
+    //             $(this).appendTo(item);
+    //             item.children('li').first().fadeIn(500);
+    //         });
+    //     }, 5000);
+    // });
 
 
     /* ==========================================================================
@@ -157,38 +157,39 @@ var formFields = $('.contact-form form input, .contact-form form textarea');
 $(formFields).on('focus', function() {
     $(this).removeClass('input-error');
 });
-$('.contact-form form').submit(function(e) {
-    e.preventDefault();
-    $(formFields).removeClass('input-error');
-    var postdata = $('.contact-form form').serialize();
-    $.ajax({
-        type: 'POST',
-        url: 'php/contact.php',
-        data: postdata,
-        dataType: 'json',
-        success: function(json) {
 
-            if (json.nameMessage !== '') {
-                $('.contact-form form .contact-name').addClass('input-error');
-            }
-            if (json.emailMessage !== '') {
-                $('.contact-form form .contact-email').addClass('input-error');
-            }
-            if (json.messageMessage !== '') {
-                $('.contact-form form textarea').addClass('input-error');
-            }
-            if (json.antispamMessage !== '') {
-                $('.contact-form form .contact-antispam').addClass('input-error');
-            }
-            if (json.nameMessage === '' && json.emailMessage === '' && json.messageMessage === '' && json.antispamMessage === '') {
-                $('.contact-form').fadeOut('3000', "linear", function() {
-                    $('.contact-form-success').slideToggle();
+// $('.contact-form form').submit(function(e) {
+//     e.preventDefault();
+//     $(formFields).removeClass('input-error');
+//     var postdata = $('.contact-form form').serialize();
+//     $.ajax({
+//         type: 'POST',
+//         url: 'php/contact.php',
+//         data: postdata,
+//         dataType: 'json',
+//         success: function(json) {
 
-                });
-            }
-        }
-    });
-});
+//             if (json.nameMessage !== '') {
+//                 $('.contact-form form .contact-name').addClass('input-error');
+//             }
+//             if (json.emailMessage !== '') {
+//                 $('.contact-form form .contact-email').addClass('input-error');
+//             }
+//             if (json.messageMessage !== '') {
+//                 $('.contact-form form textarea').addClass('input-error');
+//             }
+//             if (json.antispamMessage !== '') {
+//                 $('.contact-form form .contact-antispam').addClass('input-error');
+//             }
+//             if (json.nameMessage === '' && json.emailMessage === '' && json.messageMessage === '' && json.antispamMessage === '') {
+//                 $('.contact-form').fadeOut('3000', "linear", function() {
+//                     $('.contact-form-success').slideToggle();
+
+//                 });
+//             }
+//         }
+//     });
+// });
 
 
 
