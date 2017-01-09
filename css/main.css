@@ -159,7 +159,7 @@ strong { font-weight: 600; }
 .btn:active:focus {
   color: #fff;
   outline: none;
-  background-color: #fa5454;
+  background-color: #7779B7;
 }
 
 .cta-btn p {
@@ -782,7 +782,7 @@ blockquote cite {
 
 .form-control {
   background-color: #fff;
-  border: 1px solid #f56363;
+  border: 1px solid #7779B7;
   color: #4c4c4c;
   box-shadow: none;
   height: 60px;
