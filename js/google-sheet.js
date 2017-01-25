@@ -32,7 +32,8 @@ $(".contactForm").submit(function(event){
 
     // Callback handler that will be called on success
     request.done(function (json, textStatus, jqXHR){
-
+        
+        
         $('.contact-form').fadeOut('3000', "linear", function() {
             $('.contact-form-success').slideToggle();
 
