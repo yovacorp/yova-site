@@ -75,7 +75,7 @@ $(".contactForm").submit(function(event){
     event.preventDefault();
 });
 
-  $("#mc-forms").validate({
+  $("#mc-form").validate({
             rules: {
               
                 email: {
@@ -90,7 +90,7 @@ $(".contactForm").submit(function(event){
             },
             submitHandler: function(form) {
                 $.ajax({
-                    url: "//formspree.io/warsameb0@gmail.com",
+                    url: "https://formspree.io/warsameb0@gmail.com",
                     method: "POST",
                     data: {
                         email_request: $(form).find("input[name='subscription_email']").val()
