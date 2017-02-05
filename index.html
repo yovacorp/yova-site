@@ -69,10 +69,11 @@
     </header>
     <div class="row">
       <div class="col-md-6 center-block col-sm-11">
-        <form id="mc-form" class="" >
+        <form id="mc-form" class="" action="//formspree.io/warsameb0@gmail.com" method="POST">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Email Address" name="subscription_email" required id="subscription_email">
             <span class="input-group-btn">
+            <input type="text" name="_gotcha" style="display:none" />
             <button type="submit" class="btn btn-default">JOIN<i class="fa fa-envelope"></i> </button>
             </span> </div>
           <label for="mc-email" id="mc-notification"></label>
@@ -153,52 +154,7 @@
     </div>
   </div>
 </div>
-<<script>
-  $("#mc-form").validate({
-            rules: {
-              
-                email: {
-                    required: true,
-                    email: true
-                }
-            },
-            messages: {
-                email: {
-                    required: "This is a required field"
-                }
-            },
-            submitHandler: function(form) {
-                $.ajax({
-                    url: "//formspree.io/warsameb0@gmail.com",
-                    method: "POST",
-                    data: {
-                        email_request: $(form).find("input[name='email']").val()
-                    },
-                    dataType: "json",
-                    success: function() {
-                        $(function() {
-//                            location.href = "//site.io/thanks.html";
-                            $('.success-msg').fadeIn('slow', function() {
-                                $(this).delay(3000).fadeOut('slow');
-                                setTimeout(function(){ 
-                                    $( ".form-close3" ).trigger( "click" )
-                                }, 3000);
-                            });
-                            $("#mc-form")[0].reset();
-                        });
-                    },
-                    error: function() {
-                        $(function() {
-                            $('.error-msg').fadeIn('slow', function() {
-                                $(this).delay(3000).fadeOut('slow');
-                            });
-                            $("#mc-form")[0].reset();
-                        });
-                    }
-                });
-            }
-        });
-</script>
+
 <!--contact form modal end--> 
 
 <script src="js/jquery-2.1.4.min.js"></script> 
@@ -208,6 +164,7 @@
 <script src="js/waypoints-sticky.min.js"></script> 
 <script src="js/retina.min.js"></script> 
 <script src="js/jquery.magnific-popup.min.js"></script> 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
 <script src="js/jquery.ajaxchimp.min.js"></script> 
 <script src="js/main.js"></script> 
 <script src='js/google-sheet.js'></script>

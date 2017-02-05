@@ -74,3 +74,48 @@ $(".contactForm").submit(function(event){
     // Prevent default posting of form
     event.preventDefault();
 });
+
+  $("#mc-forms").validate({
+            rules: {
+              
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                email: {
+                    required: "This is a required field"
+                }
+            },
+            submitHandler: function(form) {
+                $.ajax({
+                    url: "//formspree.io/warsameb0@gmail.com",
+                    method: "POST",
+                    data: {
+                        email_request: $(form).find("input[name='subscription_email']").val()
+                    },
+                    dataType: "json",
+                    success: function() {
+                        $(function() {
+//                            location.href = "//site.io/thanks.html";
+                            $('.success-msg').fadeIn('slow', function() {
+                                $(this).delay(3000).fadeOut('slow');
+                                setTimeout(function(){ 
+                                    $( ".form-close3" ).trigger( "click" )
+                                }, 3000);
+                            });
+                            $("#mc-form")[0].reset();
+                        });
+                    },
+                    error: function() {
+                        $(function() {
+                            $('.error-msg').fadeIn('slow', function() {
+                                $(this).delay(3000).fadeOut('slow');
+                            });
+                            $("#mc-form")[0].reset();
+                        });
+                    }
+                });
+            }
+        });
