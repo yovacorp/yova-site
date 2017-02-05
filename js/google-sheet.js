@@ -1,6 +1,17 @@
 // Variable to hold request
 var request;
+function validateEmail(emailField){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
+        if (reg.test(emailField.value) == false) 
+        {
+            alert('Invalid Email Address');
+            return false;
+        }
+
+        return true;
+
+}
 // Bind to the submit event of our form
 $(".contactForm").submit(function(event){
 
@@ -14,6 +25,9 @@ $(".contactForm").submit(function(event){
     // Let's select and cache all the fields
     var $inputs = $form.find("input, select, button, textarea");
 
+    if($inputs){
+        console.log($inputs.find('subscription_email'));
+    }
     // Serialize the data in the form
     var serializedData = $form.serialize();
 

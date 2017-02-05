@@ -69,14 +69,17 @@
     </header>
     <div class="row">
       <div class="col-md-6 center-block col-sm-11">
-        <form id="mc-form" class="contactForm" >
+        <form id="mc-form" class="" >
           <div class="input-group">
-            <input type="email" class="form-control" placeholder="Email Address" name="subscription_email" required id="subscription_email">
+            <input type="text" class="form-control" placeholder="Email Address" name="subscription_email" required id="subscription_email">
             <span class="input-group-btn">
             <button type="submit" class="btn btn-default">JOIN<i class="fa fa-envelope"></i> </button>
             </span> </div>
           <label for="mc-email" id="mc-notification"></label>
         </form>
+        <div class="error-msg">
+          <span>Something went wrong. Please try again later.</span>
+        </div>
       </div>
     </div>
   </div>
@@ -150,7 +153,52 @@
     </div>
   </div>
 </div>
-
+<<script>
+  $("#mc-form").validate({
+            rules: {
+              
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                email: {
+                    required: "This is a required field"
+                }
+            },
+            submitHandler: function(form) {
+                $.ajax({
+                    url: "//formspree.io/warsameb0@gmail.com",
+                    method: "POST",
+                    data: {
+                        email_request: $(form).find("input[name='email']").val()
+                    },
+                    dataType: "json",
+                    success: function() {
+                        $(function() {
+//                            location.href = "//site.io/thanks.html";
+                            $('.success-msg').fadeIn('slow', function() {
+                                $(this).delay(3000).fadeOut('slow');
+                                setTimeout(function(){ 
+                                    $( ".form-close3" ).trigger( "click" )
+                                }, 3000);
+                            });
+                            $("#mc-form")[0].reset();
+                        });
+                    },
+                    error: function() {
+                        $(function() {
+                            $('.error-msg').fadeIn('slow', function() {
+                                $(this).delay(3000).fadeOut('slow');
+                            });
+                            $("#mc-form")[0].reset();
+                        });
+                    }
+                });
+            }
+        });
+</script>
 <!--contact form modal end--> 
 
 <script src="js/jquery-2.1.4.min.js"></script> 
