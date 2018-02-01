@@ -105,7 +105,7 @@ strong { font-weight: 600; }
    ========================================================================== */ 
    
 .hero-section {
-  background: url(../img/background_full.jpg) center center no-repeat scroll;
+  /*background: url(../img/background_full.jpg) center center no-repeat scroll;*/
   background-size: cover;
   padding: 0 0 4.5em;
   position: relative;
@@ -125,20 +125,20 @@ strong { font-weight: 600; }
   right: 0;
 }
 
-.hero-section::before { background: rgba(0, 0, 0, 0.3); }
+.hero-section::before { background: white; }
 
 .welcome-message { margin-top: 4.5em; }
 
 .welcome-message h1 {
   font-size: 36px;
-  color: #fff;
+  color: black;
   font-weight: 400;
   margin: 0 0 24px;
 }
 
 .welcome-message h2 {
   font-size: 22px;
-  color: #fff;
+  color: black;
   font-weight: 400;
   margin: 0;
 }
