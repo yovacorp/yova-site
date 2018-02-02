@@ -107,7 +107,7 @@ strong { font-weight: 600; }
 .hero-section {
   /*background: url(../img/background_full.jpg) center center no-repeat scroll;*/
   background-size: cover;
-  padding: 0 0 4.5em;
+  padding: 0 0 0em;
   position: relative;
   color: #fff;
 }
