@@ -125,7 +125,7 @@ strong { font-weight: 600; }
   right: 0;
 }
 
-.hero-section::before { background: white; }
+/*.hero-section::before { background: white; }*/
 
 .welcome-message { margin-top: 2.5em; }
 
