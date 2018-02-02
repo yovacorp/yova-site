@@ -1049,7 +1049,7 @@ blockquote::before {
    
 @media (min-width: 992px) {
 
-.hero-section { padding: 0em 0 12.75em; }
+.hero-section { padding: 5em 0 12.75em; }
 
 .navbar-default { background-color: transparent; }
 
