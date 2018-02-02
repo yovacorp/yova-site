@@ -127,7 +127,7 @@ strong { font-weight: 600; }
 
 .hero-section::before { background: white; }
 
-.welcome-message { margin-top: 4.5em; }
+.welcome-message { margin-top: 2.5em; }
 
 .welcome-message h1 {
   font-size: 36px;
