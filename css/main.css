@@ -581,12 +581,12 @@
 }
 
 .global-close span {
-  background: #ff3243;
+  background: #857ebf;
 }
 
 .global-close span:before,
     .global-close span:after {
-  background: #ff3243;
+  background: #857ebf;
 }
 
 .global-close--invert span {
