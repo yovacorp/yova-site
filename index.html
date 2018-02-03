@@ -18,7 +18,54 @@
 <body>
 
 <!--hero section-->
-
+<div class="js-menu menu">
+        <div class="menu__primary-col">
+            <div class="menu__top"><a href="index.html" class="menu__logo-wrap"></a></div>
+            <div class="menu__middle">
+                <ul class="menu__nav">
+                    <li class="menu__nav-item"><a href="work.html" onclick="trackEvent(‘/work', 'menu', 'work page'); return false;" class="menu__nav-link">Work</a></li>
+                    <li class="menu__nav-item"><a href="about.html" onclick="trackEvent(‘/about', 'menu', 'about page'); return false;" class="menu__nav-link">About Us</a></li>
+                    <li class="js-product-wrap menu__product-wrap menu__product-wrap--row">
+                        <ul class="menu__product">
+                            <li class="menu__product-item"><a href="http://www.nextkeyboard.co" target="_blank" class="menu__product-link"><span class="menu__product-span">Next Keyboard</span></a></li>
+                            <li class="menu__product-item"><a href="http://www.tinyhearts.com/emojiparty" target="_blank" class="menu__product-link"><span class="menu__product-span">Emoji Party</span></a></li>
+                            <li class="menu__product-item"><a href="http://www.tinyhearts.com/quickfit" target="_blank" class="menu__product-link"><span class="menu__product-span">Quick Fit</span></a></li>
+                            <li class="menu__product-item"><a href="http://www.tinyhearts.com/wake" target="_blank" class="menu__product-link"><span class="menu__product-span">Wake Alarm</span></a></li>
+                            <li class="menu__product-item"><a href="http://www.busybuildingthings.com" target="_blank" class="menu__product-link"><span class="menu__product-span">Busy Building Things</span></a></li>
+                            <li class="menu__product-item"><a href="http://www.tinyhearts.com/instamatch" target="_blank" class="menu__product-link menu__product-link--old"><span class="menu__product-span">InstaMatch</span></a></li>
+                            <li class="menu__product-item"><a href="http://www.tinyhearts.com/pocketzoo" target="_blank" class="menu__product-link menu__product-link--old"><span class="menu__product-span">Pocket Zoo</span></a></li>
+                        </ul>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="menu__bottom">
+                <h4 class="menu__meta-title">Studio</h4>
+                <p class="menu__meta-content">174 Spadina Ave. #206<br>Toronto, ON</p>
+                <ul class="menu__profile">
+                    <li class="menu__profile-item"><a href="https://www.facebook.com/TinyHeartsApps/" target="_blank" onclick="trackEvent(‘https://www.facebook.com/TinyHeartsApps/', 'menu', 'Facebook'); return false;" class="menu__profile-link menu__profile-link--facebook"></a></li>
+                    <li
+                        class="menu__profile-item"><a href="https://twitter.com/tinyheartsapps" target="_blank" onclick="trackEvent(‘https://twitter.com/tinyheartsapps', 'menu', 'Twitter'); return false;" class="menu__profile-link menu__profile-link--twitter"></a></li>
+                        <li
+                            class="menu__profile-item"><a href="https://www.linkedin.com/company/tiny-hearts" target="_blank" onclick="trackEvent(‘https://www.linkedin.com/company/tiny-hearts', 'menu', 'LinkedIn'); return false;" class="menu__profile-link menu__profile-link--linkedin"></a></li>
+                            <li
+                                class="menu__profile-item"><a href="https://medium.com/tiny-hearts-studio" target="_blank" onclick="trackEvent(‘https://medium.com/tiny-hearts-studio', 'menu', 'Medium'); return false;" class="menu__profile-link menu__profile-link--medium"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="js-product-wrap menu__product-wrap menu__product-wrap--col">
+            <ul class="menu__product">
+                <li class="menu__product-item"><a href="http://www.nextkeyboard.co" target="_blank" class="menu__product-link"><span class="menu__product-span">Next Keyboard</span></a></li>
+                <li class="menu__product-item"><a href="http://www.tinyhearts.com/emojiparty" target="_blank" class="menu__product-link"><span class="menu__product-span">Emoji Party</span></a></li>
+                <li class="menu__product-item"><a href="http://www.tinyhearts.com/quickfit" target="_blank" class="menu__product-link"><span class="menu__product-span">Quick Fit</span></a></li>
+                <li class="menu__product-item"><a href="http://www.tinyhearts.com/wake" target="_blank" class="menu__product-link"><span class="menu__product-span">Wake Alarm</span></a></li>
+                <li class="menu__product-item"><a href="http://www.busybuildingthings.com" target="_blank" class="menu__product-link"><span class="menu__product-span">Busy Building Things</span></a></li>
+                <li class="menu__product-item"><a href="http://www.tinyhearts.com/instamatch" target="_blank" class="menu__product-link menu__product-link--old"><span class="menu__product-span">InstaMatch</span></a></li>
+                <li class="menu__product-item"><a href="http://www.tinyhearts.com/pocketzoo" target="_blank" class="menu__product-link menu__product-link--old"><span class="menu__product-span">Pocket Zoo</span></a></li>
+            </ul>
+        </div>
+        <div class="js-menu-toggle menu__overlay"></div>
+    </div><a class="js-menu-toggle global-close tcon tcon-menu--xcross"><span aria-hidden="true" class="tcon-menu__lines"></span><span class="tcon-visuallyhidden">toggle menu</span></a>
 <header class="hero-section"> 
   
   <!--navigation-->
@@ -142,7 +189,7 @@
         <!--contact form-->
         
         <div class="contact-form text-center" >
-          <header class="section-header"> <img src="img/support-icon.svg" alt="support icon">
+          <header class="section-header"> 
             <h2>Contact us</h2>
             <h3>Have any questions? Send us a message.</h3>
           </header>
@@ -180,6 +227,7 @@
 <script src="js/jquery.magnific-popup.min.js"></script> 
 <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
 <script src="js/jquery.ajaxchimp.min.js"></script> 
+<script src="js/lib.js"></script>
 <script src="js/main.js"></script> 
 <script src='js/google-sheet.js'></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> 
