@@ -263,7 +263,13 @@
   }
 
   .menu__nav-link:hover {
-    border-color: #fff;
+    border-color: #857CC0;
+    color: #fff;
+
+  }
+
+  .menu__nav-link:focus{
+    color: #fff;
   }
 
   .menu__nav-link:before {
