@@ -80,7 +80,7 @@
   height: 100%;
   padding: 0;
   overflow-y: auto;
-  background: #ff3243;
+  background: #857ebf;
   z-index: 7;
   transition: left .2s cubic-bezier(0,.55,.4,1);
 }
@@ -576,17 +576,17 @@
   top: 15px;
   right: 10px;
   z-index: 7;
-  color: #ff3243;
+  color: #857ebf;
   overflow: hidden;
 }
 
 .global-close span {
-  background: #ff3243;
+  background: #857ebf;
 }
 
 .global-close span:before,
     .global-close span:after {
-  background: #ff3243;
+  background: #857ebf;
 }
 
 .global-close--invert span {
