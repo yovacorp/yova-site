@@ -315,7 +315,7 @@
 .menu__profile-item {
   display: inline-block;
   margin-right: 25px;
-  font-size: 0;
+  /*font-size: 0;*/
 }
 
 .menu__profile-item:last-of-type {
