@@ -1489,10 +1489,10 @@ html.remodal-is-locked{
     letter-spacing:1px;
     text-shadow:none !important;
     transition:background-color 0.1s;
-    background:#00b2a9 !important
+    background:#857ebf !important
 }
 .form-block .mktoButton:hover{
-    background:#00ccc1 !important
+    background:#857cc0 !important
 }
 .form-block .mktoError{
     position:static !important;
