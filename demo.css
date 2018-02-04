@@ -347,7 +347,7 @@ table{
 }
 html{
     color:#333;
-    background:#fff;
+    background:#EDF5FB;
     height:100%
 }
 body{
@@ -1517,7 +1517,7 @@ html.remodal-is-locked{
     padding:50px 0
 }
 .demo-modal .remodal-content{
-    background:#fff;
+    background:#EDF5FB;
     max-width:650px;
     padding:60px;
     text-align:left;
