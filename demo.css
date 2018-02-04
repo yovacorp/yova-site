@@ -347,7 +347,7 @@ table{
 }
 html{
     color:#333;
-    background:#fff;
+    background:#857ebf;
     height:100%
 }
 body{
@@ -1489,10 +1489,11 @@ html.remodal-is-locked{
     letter-spacing:1px;
     text-shadow:none !important;
     transition:background-color 0.1s;
-    background:#00b2a9 !important
+    background:#857ebf !important;
+    cursor: pointer;
 }
 .form-block .mktoButton:hover{
-    background:#00ccc1 !important
+    background:#201750 !important
 }
 .form-block .mktoError{
     position:static !important;
@@ -1516,7 +1517,7 @@ html.remodal-is-locked{
     padding:50px 0
 }
 .demo-modal .remodal-content{
-    background:#fff;
+    background:#EDF5FB;
     max-width:650px;
     padding:60px;
     text-align:left;
@@ -2259,7 +2260,7 @@ body.nav-is-open{
   background-color:#fff;
   line-height:1.5em;
   color:#000;
-  border:1px solid #aeb0b6;
+  border:1px solid #201750;
   padding:0.2em 0.3em;
   box-shadow:inset 1px 1px 4px 1px #ddd;
   min-height:1.9em;

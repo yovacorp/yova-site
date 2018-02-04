@@ -263,7 +263,7 @@
   }
 
   .menu__nav-link:hover {
-    border-color: #000000;
+    border-color: #201750;
     color: #fff;
 
   }
@@ -599,12 +599,12 @@
 }
 
 .global-close--fixed-header span {
-  background: #ff3243;
+  background: #857ebf;
 }
 
 .global-close--fixed-header span:before,
     .global-close--fixed-header span:after {
-  background: #ff3243;
+  background: #857ebf;
 }
 
 .global-close--transformed {
@@ -744,7 +744,7 @@ strong { font-weight: 600; }
 
 .btn:hover {
   color: #fff;
-  background-color: #7779B7;
+  background-color: #201750;
   opacity: 0.9;
 }
 
