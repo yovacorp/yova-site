@@ -9,6 +9,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
     display:block
 }
+
+.demo-modal .modal-logo {
+    width: 210px;
+    padding: 50px 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
 body{
     line-height:1
 }
@@ -1514,7 +1524,8 @@ html.remodal-is-locked{
 }
 .demo-modal .modal-logo{
     width:210px;
-    padding:50px 0
+    padding:50px 0;
+    /* text-align: center; */
 }
 .demo-modal .remodal-content{
     background:#EDF5FB;
