@@ -716,14 +716,14 @@ strong { font-weight: 600; }
 .welcome-message h1 {
   font-size: 36px;
   color: black;
-  font-weight: 400;
+  font-weight: 56;
   margin: 0 0 24px;
 }
 
 .welcome-message h2 {
   font-size: 22px;
   color: black;
-  font-weight: 400;
+  font-weight: 56;
   margin: 0;
 }
 
