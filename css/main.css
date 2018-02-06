@@ -728,23 +728,22 @@ strong { font-weight: 600; }
 }
 
 .btn {
-  padding: 1em 3em;
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #7779B7;
-  line-height: 1.5;
-  border: none;
-  border-radius: 3px;
-  font-weight: 400;
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
+    transition: background-color .2s ease-out;
+    background: hsla(0,0%,100%,.1);
+    border: 2px solid #8284bf;
+    border-radius: 3px;
+    color: #8284bf;
+    display: inline-block;
+    font-weight: 500;
+    padding: 4px 50px;
+    height: 68px;
+    line-height: 55px;
+    font-size: 18px;
 }
 
 .btn:hover {
   color: #fff;
-  background-color: #201750;
+  background-color: #8284bf;
   opacity: 0.9;
 }
 
@@ -754,7 +753,7 @@ strong { font-weight: 600; }
 .btn:active:focus {
   color: #fff;
   outline: none;
-  background-color: #7779B7;
+  background-color: #8284bf;
 }
 
 .cta-btn p {
