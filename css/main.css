@@ -689,7 +689,7 @@ strong { font-weight: 600; }
    ========================================================================== */ 
    
 .hero-section {
-  background: url(/img/background_full.png) center center no-repeat scroll;
+  background: #D3D2E7;
   background-size: cover;
   padding: 0 0 0em;
   position: relative;
@@ -739,6 +739,7 @@ strong { font-weight: 600; }
     height: 68px;
     line-height: 55px;
     font-size: 18px;
+   margin-bottom: 15px;
 }
 
 .btn:hover {
@@ -1568,9 +1569,9 @@ blockquote cite {
    
 @media (min-width: 768px) {
 
-.hero-section { padding: 0 0 0em; }
+.hero-section { padding: 0 0 16em; }
 
-.welcome-message { margin-top: 8.25em; }
+.welcome-message { margin-top: 3em; }
 
 .welcome-message h1 { font-size: 44px; }
 
@@ -1648,7 +1649,7 @@ blockquote::before {
 
 .nav-left { padding-left: 3em; }
 
-.welcome-message { margin-top: 0em; }
+.welcome-message { margin-top: 3em; }
 
 .welcome-message h1 { font-size: 56px; }
 
