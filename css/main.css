@@ -1570,7 +1570,7 @@ blockquote cite {
 
 .hero-section { padding: 0 0 0em; }
 
-.welcome-message { margin-top: 8.25em; }
+.welcome-message { margin-top: 3em; }
 
 .welcome-message h1 { font-size: 44px; }
 
@@ -1648,7 +1648,7 @@ blockquote::before {
 
 .nav-left { padding-left: 3em; }
 
-.welcome-message { margin-top: 0em; }
+.welcome-message { margin-top: 3em; }
 
 .welcome-message h1 { font-size: 56px; }
 
