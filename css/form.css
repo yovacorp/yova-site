@@ -28,7 +28,7 @@ body, html {
 
 .remodal-close{
     position:absolute;
-    top: 59px;
+    top: 2px;
     right: 31px;
     width:60px;
     color: black;
