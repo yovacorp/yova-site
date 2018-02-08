@@ -691,7 +691,7 @@ strong { font-weight: 600; }
 .hero-section {
   background: #D3D2E7;
   background-size: cover;
-  padding: 0 0 0em;
+  padding: 0 0 16em;
   position: relative;
   color: #fff;
 }
