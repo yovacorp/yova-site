@@ -1568,7 +1568,7 @@ blockquote cite {
    
 @media (min-width: 768px) {
 
-.hero-section { padding: 0 0 0em; }
+.hero-section { padding: 0 0 16em; }
 
 .welcome-message { margin-top: 3em; }
 
