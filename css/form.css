@@ -28,9 +28,9 @@ body, html {
 
 .remodal-close{
     position:absolute;
-    top: 2px;
+    top: 15px;
     right: 31px;
-    width:13px;
+    width:24px;
     color: black;
 }
 .remodal-close:hover{
