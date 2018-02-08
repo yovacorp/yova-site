@@ -1542,7 +1542,7 @@ html.remodal-is-locked{
 }
 .demo-modal .remodal-close{
     position:absolute;
-    top:20px;
+    top:3px;
     right:30px;
     width:60px;
 }
