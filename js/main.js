@@ -1,10 +1,8 @@
 $(function() {
     "use strict";
 
-    /* ==========================================================================
-   Sub Form   
-   ========================================================================== */
-
+   
+    
 
     function toggleMenuModal() {
     if (menuModalOpen = !menuModalOpen, menu.classList.toggle("menu--active"), body.classList.toggle("is-frozen"), transformicons.toggle(globalClose), globalClose.classList.toggle("global-close--transformed"), null != productToggle && productToggle.classList.contains("menu__nav-link--active")) {

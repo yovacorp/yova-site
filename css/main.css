@@ -173,6 +173,7 @@
 
 .menu__logo-wrap {
   display: inline-block;
+  margin-bottom: 27px;
 }
 
 .menu__hamburger {
@@ -671,7 +672,7 @@ a:focus { outline: none; }
 
 img {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 ul,
